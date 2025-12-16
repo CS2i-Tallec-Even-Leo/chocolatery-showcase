@@ -9,7 +9,7 @@ export default function Navbar() {
       <div class="container-fluid">
         <a class="navbar-brand" href="/">
           <img
-            src="/logo-charlotte.jpg"
+            src="images/logo-charlotte.jpg"
             alt="Fun'ky Choc logo"
             width="75"
             height="75"
@@ -31,16 +31,16 @@ export default function Navbar() {
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a
-                class={`nav-link${isActive("/") ? " text-danger" : ""}`}
-                href="/"
+                class={`nav-link${isActive("") ? " text-danger" : ""}`}
+                href=""
               >
                 Home
               </a>
             </li>
             <li class="nav-item">
               <a
-                class={`nav-link${isActive("/products") ? " text-danger" : ""}`}
-                href="/products"
+                class={`nav-link${isActive("products") ? " text-danger" : ""}`}
+                href="products"
               >
                 Produits
               </a>
@@ -48,9 +48,9 @@ export default function Navbar() {
             <li class="nav-item">
               <a
                 class={`nav-link${
-                  isActive("/social_network") ? " text-danger" : ""
+                  isActive("social_network") ? " text-danger" : ""
                 }`}
-                href="/social_network"
+                href="social_network"
               >
                 Réseaux Sociaux
               </a>

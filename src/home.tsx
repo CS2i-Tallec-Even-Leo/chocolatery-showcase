@@ -35,7 +35,7 @@ export default function Home() {
 
           <div className="col-md-6">
             <img
-              src="factory.webp"
+              src="images/factory.webp"
               className="img-fluid rounded"
               alt="Chocolate workshop"
             />
@@ -51,7 +51,7 @@ export default function Home() {
           <div className="col-md-4">
             <div className="card product-card">
               <img
-                src="chocolate-bar.jpg"
+                src="images/chocolate-bar.jpg"
                 className="card-img-top product-image"
                 alt="Chocolate Bar"
               />
@@ -70,7 +70,7 @@ export default function Home() {
           <div className="col-md-4">
             <div className="card product-card">
               <img
-                src="chocolate-truffles.jpg"
+                src="images/chocolate-truffles.jpg"
                 className="card-img-top product-image"
                 alt="Chocolate Truffles"
               />
@@ -89,7 +89,7 @@ export default function Home() {
           <div className="col-md-4">
             <div className="card product-card">
               <img
-                src="hot-chocolate.jpg"
+                src="images/hot-chocolate.jpg"
                 className="card-img-top product-image"
                 alt="Hot Chocolate"
               />
