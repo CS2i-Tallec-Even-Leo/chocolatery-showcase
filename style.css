@@ -1,0 +1,18 @@
+.btn-primary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #f68c42;
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #c36e34;
+  --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+}
+.btn-outline-primary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: #f68c42;
+  --bs-btn-bg: #fff;
+  --bs-btn-border-color: #f68c42;
+  --bs-btn-hover-color: #c36e34;
+  --bs-btn-hover-bg: #fff;
+  --bs-btn-hover-border-color: #c36e34;
+}
