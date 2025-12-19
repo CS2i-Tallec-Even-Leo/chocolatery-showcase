@@ -9,7 +9,6 @@ export default function Products() {
         <div className="col-10">
           <h1>Products Page</h1>
           <p>Welcome to our delicious chocolate products showcase!</p>
-
           <div className="row mt-4">
             {products.map((product) => (
               <div className="col-md-4" key={product.id}>
