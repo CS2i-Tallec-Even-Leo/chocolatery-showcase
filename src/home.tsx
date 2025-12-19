@@ -1,3 +1,5 @@
+import products from "./data/products.json" with { type: "json" };
+import Card from "./components/card.tsx";
 export default function Home() {
   return (
     <>
@@ -47,63 +49,17 @@ export default function Home() {
       <div className="container py-5">
         <h2 className="text-center mb-4">Featured Chocolates</h2>
 
-        <div className="row">
-          <div className="col-md-4">
-            <div className="card product-card">
-              <img
-                src="images/chocolate-bar.jpg"
-                className="card-img-top product-image"
-                alt="Chocolate Bar"
+        <div className="row mt-4">
+          {products.map((product) => (
+            <div className="col-md-4" key={product.id}>
+              <Card
+                title={product.title}
+                description={product.description}
+                image={product.image}
+                price={product.price}
               />
-              <div className="card-body d-flex flex-column">
-                <h5 className="card-title">Dark Chocolate Bar</h5>
-                <p className="card-text">
-                  Intense cocoa flavor with a smooth finish.
-                </p>
-                <button className="btn btn-outline-primary mt-auto">
-                  Discover
-                </button>
-              </div>
             </div>
-          </div>
-
-          <div className="col-md-4">
-            <div className="card product-card">
-              <img
-                src="images/chocolate-truffles.jpg"
-                className="card-img-top product-image"
-                alt="Chocolate Truffles"
-              />
-              <div className="card-body d-flex flex-column">
-                <h5 className="card-title">Chocolate Truffles</h5>
-                <p className="card-text">
-                  Creamy center coated in fine cocoa powder.
-                </p>
-                <button className="btn btn-outline-primary mt-auto">
-                  Discover
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-4">
-            <div className="card product-card">
-              <img
-                src="images/hot-chocolate.jpg"
-                className="card-img-top product-image"
-                alt="Hot Chocolate"
-              />
-              <div className="card-body d-flex flex-column">
-                <h5 className="card-title">Hot Chocolate</h5>
-                <p className="card-text">
-                  A warm, comforting drink made from real chocolate.
-                </p>
-                <button className="btn btn-outline-primary mt-auto">
-                  Discover
-                </button>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
 

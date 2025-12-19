@@ -1,10 +1,10 @@
 import Navbar from "./components/navbar.tsx";
 
 import { LocationProvider, ErrorBoundary, Router, Route } from "preact-iso";
-import NotFound from "./components/not_found.tsx";
+import NotFound from "./components/not-found.tsx";
 import Home from "./home.tsx";
 import Products from "./components/products.tsx";
-import Social from "./components/social_network.tsx";
+import Social from "./components/social-network.tsx";
 
 export function App() {
   return (
@@ -13,15 +13,9 @@ export function App() {
         <ErrorBoundary>
           <Navbar />
           <Router>
-            <Route path="./chocolatery-showcase" component={Home} />
-            <Route
-              path="./chocolatery-showcase/products"
-              component={Products}
-            />
-            <Route
-              path="./chocolatery-showcase/social_network"
-              component={Social}
-            />
+            <Route path="/" component={Home} />
+            <Route path="/products" component={Products} />
+            <Route path="/social-network" component={Social} />
             <Route component={NotFound} default />
           </Router>
         </ErrorBoundary>

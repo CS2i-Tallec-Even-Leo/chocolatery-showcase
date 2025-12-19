@@ -1,3 +1,5 @@
+import Card from "./card.tsx";
+import products from "../data/products.json" with { type: "json" };
 export default function Products() {
   return (
     <>
@@ -9,60 +11,18 @@ export default function Products() {
           <p>Welcome to our delicious chocolate products showcase!</p>
 
           <div className="row mt-4">
-            <div className="col-md-4">
-              <div className="card product-card">
-                <img
-                  src="images/chocolate-bar.jpg"
-                  className="card-img-top product-image"
-                  alt="Chocolate Bar"
+            {products.map((product) => (
+              <div className="col-md-4" key={product.id}>
+                <Card
+                  title={product.title}
+                  description={product.description}
+                  image={product.image}
+                  price={product.price}
                 />
-                <div className="card-body d-flex flex-column">
-                  <h5 className="card-title">Chocolate Bar</h5>
-                  <p className="card-text">
-                    Rich dark chocolate made with premium cocoa.
-                  </p>
-                  <p className="btn btn-primary mt-auto">View product</p>
-                </div>
               </div>
-            </div>
-
-            <div className="col-md-4">
-              <div className="card product-card">
-                <img
-                  src="images/chocolate-truffles.jpg"
-                  className="card-img-top product-image"
-                  alt="Chocolate Truffles"
-                />
-                <div className="card-body d-flex flex-column">
-                  <h5 className="card-title">Chocolate Truffles</h5>
-                  <p className="card-text">
-                    Smooth and creamy truffles with a cocoa coating.
-                  </p>
-                  <p className="btn btn-primary mt-auto">View product</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-4">
-              <div className="card product-card">
-                <img
-                  src="images/hot-chocolate.jpg"
-                  className="card-img-top product-image"
-                  alt="Hot Chocolate"
-                />
-                <div className="card-body d-flex flex-column">
-                  <h5 className="card-title">Hot Chocolate</h5>
-                  <p className="card-text">
-                    Warm, comforting chocolate drink for cold days.
-                  </p>
-                  <p className="btn btn-primary mt-auto">View product</p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
-
-        <div className="col-1"></div>
       </div>
 
       {/* CSS */}
