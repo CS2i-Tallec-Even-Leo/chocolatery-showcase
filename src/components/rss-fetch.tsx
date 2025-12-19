@@ -17,9 +17,9 @@ export default function RSSFetch({ url }: { url: string }) {
 
       {rssData && (
         <>
-          <script async src="//www.instagram.com/embed.js"></script>
+          <script async src="https://www.instagram.com/embed.js"></script>
           <div className="row">
-            <div className="col-10" style={{ marginLeft: "5%" }}>
+            <div className="col-10 offset-1">
               <div className="row mt-12">
                 {rssData.items?.map((item) => (
                   <CardInstagram item={item} />

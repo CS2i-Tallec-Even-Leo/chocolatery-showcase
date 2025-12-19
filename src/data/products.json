@@ -3,21 +3,21 @@
     "id": 1,
     "title": "Chocolate Bar",
     "description": "Rich dark chocolate made with premium cocoa.",
-    "image": "images/chocolate-bar.jpg",
+    "image": "./images/chocolate-bar.jpg",
     "price": 4.99
   },
   {
     "id": 2,
     "title": "Chocolate Truffles",
     "description": "Smooth and creamy truffles with a cocoa coating.",
-    "image": "images/chocolate-truffles.jpg",
+    "image": "./images/chocolate-truffles.jpg",
     "price": 4.99
   },
   {
     "id": 3,
     "title": "Hot Chocolate",
     "description": "Warm, comforting chocolate drink for cold days.",
-    "image": "images/hot-chocolate.jpg",
+    "image": "./images/hot-chocolate.jpg",
     "price": 4.99
   }
 ]

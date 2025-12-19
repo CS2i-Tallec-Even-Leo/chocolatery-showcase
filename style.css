@@ -1,3 +1,7 @@
+body {
+  background-image: url("/public/images/Fondg.svg");
+  background-color: #fff;
+}
 .btn-primary {
   --bs-btn-font-weight: 600;
   --bs-btn-color: #fff;
