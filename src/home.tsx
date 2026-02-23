@@ -11,12 +11,14 @@ export default function Home() {
           <div className="col-10 text-center">
             <h1 className="display-4 fw-bold">Fun'ky Choc</h1>
             <p className="lead mt-3">
-              Discover handcrafted chocolates made with passion and premium
-              cocoa.
+              Découvrer la passion du chocolat à chaque bouchée.
             </p>
-            <button className="btn btn-primary btn-lg mt-3">
-              Explore our products
-            </button>
+            <a
+              href="/chocolatery-showcase/products"
+              className="btn btn-primary btn-lg mt-3"
+            >
+              Explorez nos produits
+            </a>
           </div>
 
           <div className="col-1"></div>
@@ -27,12 +29,15 @@ export default function Home() {
       <div className="container py-5">
         <div className="row">
           <div className="col-md-6">
-            <h2>Our Chocolate Story</h2>
-            <p>
-              At Chocolate Heaven, we believe chocolate is more than a treat —
-              it's an experience. Our products are carefully crafted using
-              ethically sourced cocoa and traditional techniques.
-            </p>
+            <div style="background-color: #f68c42; padding: 20px; border-radius: 8px;">
+              <h2>Notre histoire du chocolat</h2>
+              <p>
+                Chez Fun'ky choc, nous croyons que le chocolat est plus qu'un
+                simple dessert — c'est une expérience. Nos produits sont
+                soigneusement conçus en utilisant du cacao éthiquement provenant
+                et des techniques traditionnelles.
+              </p>
+            </div>
           </div>
 
           <div className="col-md-6">
@@ -47,7 +52,7 @@ export default function Home() {
 
       {/* Featured Products */}
       <div className="container py-5">
-        <h2 className="text-center mb-4">Featured Chocolates</h2>
+        <h2 className="text-center mb-4">Produits Vedettes</h2>
 
         <div className="row mt-4">
           {products.map((product) => (
@@ -62,19 +67,38 @@ export default function Home() {
           ))}
         </div>
       </div>
-
-      {/* Call To Action */}
       <div className="container-fluid bg-secondary text-light py-5">
         <div className="row">
           <div className="col text-center">
-            <h2>Ready to taste the difference?</h2>
+            <h2>Prêt à goûter la différence ?</h2>
             <p className="mb-3">
-              Explore our full range of chocolate creations today.
+              Explorez notre gamme complète de créations chocolatées
+              aujourd'hui.
             </p>
-            <a href="/chocolatery-showcase/products" className="btn btn-light btn-lg">View all products</a>
+            <a
+              href="/chocolatery-showcase/products"
+              className="btn btn-light btn-lg"
+            >
+              Voir tous les produits
+            </a>
           </div>
         </div>
       </div>
+
+      <p className="p-5" style="background-color: #f68c42">
+        {" "}
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad sunt
+        consectetur nobis alias nihil ab autem et quisquam, fuga ea deserunt
+        eius veniam praesentium tenetur culpa! Dolor commodi eum earum
+        voluptatum ut illo placeat perspiciatis, molestias quasi totam
+        doloremque nulla rem vero illum temporibus sed repellendus voluptatem
+        iste quos fuga ipsa sit error. Est aperiam magni nisi libero suscipit
+        voluptates harum doloribus consectetur minima laborum vel velit
+        recusandae, eius corrupti ducimus aspernatur sapiente id odio modi
+        ratione et quia saepe. Quidem quod eveniet, ut sint explicabo nesciunt
+        optio iusto quo recusandae. Facilis laboriosam cumque dolore fugit ipsa
+        consequuntur cum vitae?
+      </p>
 
       {/* CSS */}
       <style>{`
